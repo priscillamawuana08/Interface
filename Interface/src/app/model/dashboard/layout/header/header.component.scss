@@ -1,0 +1,31 @@
+.mat-toolbar{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    }
+    
+    ul{
+        list-style: none;
+    }
+    li{
+        list-style: none;
+    }
+    
+    button{
+        border: 0;
+        outline: none;
+        background: transparent;
+    }
+    
+    .user-image{
+        border-radius:50%;
+        width: 50px;
+        height: 50px;
+    }
+    .user-image-icon{
+        height: 10px;
+        font-size: 16px;
+    }
+    .mat-menu-content{
+        width: 160px;
+    }

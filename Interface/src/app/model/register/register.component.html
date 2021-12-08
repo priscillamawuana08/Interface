@@ -1,0 +1,35 @@
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+    <mat-card class="box">
+      <mat-card-header>
+        <mat-card-title>Register</mat-card-title>
+      </mat-card-header>
+      <form class="example-full-width">
+        <mat-card-content>
+          <mat-form-field class="example-full-width">
+            <input type = "text"  placeholder="FirstName" matInput ngModel name ="FirstName"firstName required #firstName input ="ngModel">
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width">
+            <input type = "text"  placeholder="LastName" matInput ngModel name ="LastName"lastName required #lastName input ="ngModel">
+          </mat-form-field>
+  
+          <mat-form-field class="example-full-width">
+            <input type = "text"  placeholder="Email" matInput ngModel name ="Email"email required #email input ="ngModel">
+          </mat-form-field>
+  
+          <mat-form-field class="example-full-width">
+            <input type = "password"  placeholder="password" matInput ngModel name ="password"password required #password input ="ngModel">
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width">
+            <input type = "Username"  placeholder="Username" matInput ngModel name ="Username"Username required #username input ="ngModel">
+          </mat-form-field>
+
+        </mat-card-content>
+  
+        <button type ="button" color="accent" mat-raised-button>Register</button>
+        
+        "Now login" <a [routerLink]="['/login']" routerLinkActive = "router-link-active">Login</a>
+    </form>
+    </mat-card>
+  </div>
