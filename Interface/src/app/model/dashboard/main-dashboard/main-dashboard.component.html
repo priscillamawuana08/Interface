@@ -1,1 +1,31 @@
-<p>main-dashboard works!</p>
+<app-header></app-header>
+<app-sidebar></app-sidebar> 
+  <div class="container-fluid">
+    <div class="row">
+   
+      <main class="col-md-7 ms-sm-auto col-lg-8 px-md-4">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+          <h1 class="h2">Dashboard</h1>
+          <div class="btn-toolbar mb-2 mb-md-0">
+            <app-time-of-day></app-time-of-day>
+          </div>
+        </div> 
+        <div class="container mb-3 ">
+          <div class="d-flex align-items-center justify-content-center" >
+            <div class="mat-card" style="min-width: 260px;">
+              <ul class="list-group list-group-flush">
+                <li *ngFor="let data of data" class="list-group-item"><span><b>Ticker:</b> 
+                    {{data.TICKER}}  </span>| <span><b>Last Traded Price: </b> {{data.LAST_TRADED_PRICE}}</span></li>
+              </ul>
+
+            </div>
+        </div>
+      </div>
+      
+    <app-footer></app-footer>
+
+      </main>
+
+    </div>
+
+  </div>

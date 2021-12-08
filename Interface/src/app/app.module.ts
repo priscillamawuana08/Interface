@@ -25,6 +25,7 @@ import { HeaderComponent } from './model/dashboard/layout/header/header.componen
 import { FooterComponent } from './model/dashboard/layout/footer/footer.component';
 import { SidebarComponent } from './model/dashboard/layout/sidebar/sidebar.component';
 import { HttpClientModule } from '@angular/common/http';
+import { TimeComponent } from './model/dashboard/layout/time/time.component';
 // import {NgxSpinnerModule} from 'ngx-spinner';
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { HttpClientModule } from '@angular/common/http';
     MainDashboardComponent,
     HeaderComponent,
     FooterComponent,
-    SidebarComponent
+    SidebarComponent,
+    TimeComponent
   ],
   imports: [
     BrowserModule,
