@@ -19,7 +19,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
-import { OrderComponent } from './model/order/order.component';
+// import { OrderComponent } from './model/order/order.component';
 import { MainDashboardComponent } from './model/dashboard/main-dashboard/main-dashboard.component';
 import { HeaderComponent } from './model/dashboard/layout/header/header.component';
 import { FooterComponent } from './model/dashboard/layout/footer/footer.component';
@@ -35,7 +35,7 @@ import { ApiServiceService } from './service/api-service.service';
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    OrderComponent,
+    // OrderComponent,
     MainDashboardComponent,
     HeaderComponent,
     FooterComponent,
