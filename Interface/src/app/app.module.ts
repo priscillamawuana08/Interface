@@ -28,6 +28,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { LoginService } from './service/login.service';
 import { RegisterService } from './service/register.service';
 import { ApiServiceService } from './service/api-service.service';
+// import { ProductsComponent } from './model/products/products.component';
+// import { CustomersComponent } from './model/customers/customers.component';
 
 // import {NgxSpinnerModule} from 'ngx-spinner';
 @NgModule({
@@ -40,6 +42,8 @@ import { ApiServiceService } from './service/api-service.service';
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
+    // ProductsComponent,
+    // CustomersComponent,
   
   ],
   imports: [
