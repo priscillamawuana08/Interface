@@ -1,61 +1,22 @@
 <app-header></app-header>
 <app-sidebar></app-sidebar>
-<div class = "container -fluid">
-    <div class = "row">
-        <main class ="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-            <div
-                class ="d-flex justfy-content-between flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-button">
-                <h2 class = "h3">Orders</h2>
-
-                <div class = "btn-toolbar mb-2 mb-md-0">
-                    <app-time></app-time>
-                </div>
-            </div>
-            <div class = "container mb-4">
-                <div class = "d-flex align-items-center justfy-content-center">
-
-                    <button type="button" class = "btn btn-primary m-3" data-bs-toggle = "modal" data-bs-target = "#exampleModel">
-                        Make a trade
-                    </button>
-                </div>
-            </div>\
-
-            <app-footer></app-footer>
-
-        </main>
-    </div>
+<div>
+<div>
+    <button mat-button [matMenuTriggerFor]="menu"  class = "user mt-2 d-flex align-items-center">Order</button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item>CreateOder</button>
+        <button mat-menu-item>CancelOrder</button>
+        <button mat-menu-item>ChangeOrder</button>
+        <button mat-menu-item>SatusReportOnOrder</button>
+      </mat-menu>
 </div>
-
-<!-- SELL AND BUY MODEL -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-body">
-                <form>
-                    <div class="col-6 mx-auto">
-                        <label class="col-form-label">Product Name:</label>
-                        <input type="text" class="form-control" id="product">
-                    </div>
-                    <div class="col-6 mx-auto">
-                        <label class="col-form-label">Quantity:</label>
-                        <input type="text" class="form-control" id="recipient-name">
-                    </div>
-                    <div class="col-6 mx-auto">
-                        <label class="col-form-label">Amount:</label>
-                        <input type="text" class="form-control" id="recipient-name">
-                    </div>
-                    <div class="col-6 mx-auto">
-                        <label class="col-form-label">Sell/buy:</label>
-                        <input type="text" class="form-control" id="recipient-name">
-                    </div>
-                    <div class="col-1 mx-auto"> <button class="btn btn-success btn-sm mx-auto">confirm Order</button></div>
-                   
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-sm btn-danger" data-bs-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
+<div>
+    <button mat-button [matMenuTriggerFor]="menu"  class = "user mt-2 d-flex align-items-center">Stock</button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item>Apple</button>
+        <button mat-menu-item>Banana</button>
+        <button mat-menu-item>Orange</button>
+        <button mat-menu-item>Grapes</button>
+      </mat-menu>
 </div>
-
+</div>

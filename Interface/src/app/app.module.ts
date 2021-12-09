@@ -25,7 +25,10 @@ import { HeaderComponent } from './model/dashboard/layout/header/header.componen
 import { FooterComponent } from './model/dashboard/layout/footer/footer.component';
 import { SidebarComponent } from './model/dashboard/layout/sidebar/sidebar.component';
 import { HttpClientModule } from '@angular/common/http';
-import { TimeComponent } from './model/dashboard/layout/time/time.component';
+import { LoginService } from './service/login.service';
+import { RegisterService } from './service/register.service';
+import { ApiServiceService } from './service/api-service.service';
+
 // import {NgxSpinnerModule} from 'ngx-spinner';
 @NgModule({
   declarations: [
@@ -37,7 +40,7 @@ import { TimeComponent } from './model/dashboard/layout/time/time.component';
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
-    TimeComponent
+  
   ],
   imports: [
     BrowserModule,
@@ -61,7 +64,7 @@ import { TimeComponent } from './model/dashboard/layout/time/time.component';
     // NgxSpinnerModule,
     
   ],
-  providers: [],
+  providers: [LoginService,RegisterService,ApiServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

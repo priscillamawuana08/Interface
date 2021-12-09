@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular Interface';
+  hide = true;
+  sideBarOpen = true;
+
+  ngOnInit(){}
+
+  sideBarToggler(){
+    this.sideBarOpen = !this.sideBarOpen;
+  }
 }
