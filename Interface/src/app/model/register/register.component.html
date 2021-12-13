@@ -3,33 +3,60 @@
       <mat-card-header>
         <mat-card-title>Register</mat-card-title>
       </mat-card-header>
+
+      <!-- <div class="sign-up bg-light">
+        <div *ngIf="isError" class="alert alert-danger p-0 text-center" role="alert">
+            {{alert_message}}
+        </div>
+        <div *ngIf="isSuccess" class="alert alert-success p-0 text-center" role="alert">
+            {{alert_message}}
+        </div> -->
+
       <form class="example-full-width">
         <mat-card-content>
           <mat-form-field class="example-full-width">
-            <input type = "text"  placeholder="FirstName" matInput ngModel name ="FirstName"firstName required #firstName input ="ngModel">
+            <input type = "text"  placeholder="FirstName" matInput ngModel name ="FirstName"id = "FirstName" class = "form-control" required = "true">
           </mat-form-field>
 
           <mat-form-field class="example-full-width">
-            <input type = "text"  placeholder="LastName" matInput ngModel name ="LastName"lastName required #lastName input ="ngModel">
+            <input type = "text"  placeholder="LastName" matInput ngModel name ="LastName" id = "LastName" class = "form-control" required = "true">
           </mat-form-field>
   
           <mat-form-field class="example-full-width">
-            <input type = "text"  placeholder="Email" matInput ngModel name ="Email"email required #email input ="ngModel">
+            <input type = "text"  placeholder="Email" matInput ngModel name ="Email" id = "Email" class = "form-control" required = "true">
           </mat-form-field>
   
           <mat-form-field class="example-full-width">
-            <input type = "password"  placeholder="password" matInput ngModel name ="password"password required #password input ="ngModel">
+            <input type = "fieldTextType ? 'text' : 'password'"  placeholder="password" matInput ngModel name ="password" id = "password" class = "form-control" required = "true">
+            <span (click)="toggleFieldTextType()" class="input-group-text" type="button">
+              <i [ngClass]="{
+                                  'bi bi-eye-slash': !fieldTextType,
+                                  'bi bi-eye': fieldTextType
+                                  }">
+              </i>
+          </span>
+          </mat-form-field>
+          
+          <mat-form-field class="example-full-width">
+            <input type = "fieldTextType ? 'text' : 'password'"  placeholder="Confirm password" matInput ngModel name ="Confirm password" id = "password" class = "form-control" required = "true">
+            <span (click)="toggleFieldTextType()" class="input-group-text" type="button">
+              <i [ngClass]="{
+                                  'bi bi-eye-slash': !fieldTextType,
+                                  'bi bi-eye': fieldTextType
+                                  }">
+              </i>
+          </span>
           </mat-form-field>
 
           <mat-form-field class="example-full-width">
-            <input type = "Username"  placeholder="Username" matInput ngModel name ="Username"Username required #username input ="ngModel">
+            <input type = "Username"  placeholder="Username" matInput ngModel name ="Username" id = "Username" class = "form-control" required = "true">
           </mat-form-field>
 
         </mat-card-content>
   
-        <button type ="button" color="accent" mat-raised-button>Register</button>
+        <button type ="button" color="accent" (click)="registerClient()" mat-raised-button>Register</button>
         
-        "Now login" <a [routerLink]="['/login']" routerLinkActive = "router-link-active">Login</a>
+        Already registered? <a [routerLink]="['/login']" routerLinkActive = "router-link-active">Login</a>
     </form>
     </mat-card>
   </div>

@@ -20,7 +20,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
 // import { OrderComponent } from './model/order/order.component';
-import { MainDashboardComponent } from './model/dashboard/main-dashboard/main-dashboard.component';
+// import { MainDashboardComponent } from './model/dashboard/main-dashboard/main-dashboard.component';
 import { HeaderComponent } from './model/dashboard/layout/header/header.component';
 import { FooterComponent } from './model/dashboard/layout/footer/footer.component';
 import { SidebarComponent } from './model/dashboard/layout/sidebar/sidebar.component';
@@ -38,7 +38,7 @@ import { ApiServiceService } from './service/api-service.service';
     LoginComponent,
     RegisterComponent,
     // OrderComponent,
-    MainDashboardComponent,
+    // MainDashboardComponent,
     HeaderComponent,
     FooterComponent,
     SidebarComponent,

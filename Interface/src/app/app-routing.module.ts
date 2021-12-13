@@ -9,7 +9,12 @@ const routes: Routes = [
       {path: '', redirectTo:'login', pathMatch:'full' },
       { path: 'login', component:LoginComponent },
       { path: 'register', component:RegisterComponent },
-      { path: 'main-dashboard', component:MainDashboardComponent },
+      // { path: 'main-dashboard', component:MainDashboardComponent },
+      
+      { path: 'main-dashboard',
+       loadChildren:() => import('./model/dashboard/main-dashboard/main-dashboard.module').then(m => m.MainDashboardModule)
+      },
+
 
       {
         path: 'order',
