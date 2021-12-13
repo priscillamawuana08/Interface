@@ -22,13 +22,13 @@ const routes: Routes = [
       },
 
       {
-        path: 'customers',
-        loadChildren: () => import('./model/customers/customers.module').then(m => m.CustomersModule)
+        path: 'update',
+        loadChildren: () => import('./model/update/update.module').then(m => m.UpdateModule)
       },
 
       {
-        path: 'products',
-        loadChildren: () => import('./model/products/products.module').then(m => m.ProductsModule)
+        path: 'portfolio',
+        loadChildren: () => import('./model/portfolio/portfolio.module').then(m => m.PortfolioModule)
       }
       
 ];

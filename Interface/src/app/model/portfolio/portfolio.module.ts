@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { OrderRoutingModule } from './order-routing.module';
-import { OrderComponent } from './order.component';
+import { PortfolioRoutingModule } from './portfolio-routing.module';
+import { PortfolioComponent } from './portfolio.component';
 import { MatCardModule } from '@angular/material/card';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
@@ -10,12 +10,12 @@ import { MatButtonModule } from '@angular/material/button';
 @NgModule({
   imports: [
     CommonModule,
-    OrderRoutingModule,
+    PortfolioRoutingModule,
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule
   ],
-  declarations: [OrderComponent]
+  declarations: [PortfolioComponent]
 })
-export class OrderModule { }
+export class PortfolioModule { }

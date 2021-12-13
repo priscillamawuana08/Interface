@@ -11,6 +11,6 @@ export class RegisterService {
   ) { }
 
   registerClient(playload:any){
-    return this.http.post<any>("http://127.0.0.1:4040/register-process", playload)
+    return this.http.post<any>("https://group16-banking-app.herokuapp.com/register-process", playload)
   }
 }

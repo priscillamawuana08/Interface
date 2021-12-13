@@ -5,18 +5,13 @@ import {param } from 'jquery';
 @Injectable({
   providedIn: 'root'
 })
-export class LoginService  {
+export class UpdateService {
 
   constructor(
     private http:HttpClient
-    
   ) { }
-  
-  
-
-
 
   checkDetails(params:any){
-    return this.http.post('https://group16-banking-app.herokuapp.com/login',params)
+    return this.http.post('https://group16-banking-app.herokuapp.com/login/client/update-order/{id}',params)
   }
 }

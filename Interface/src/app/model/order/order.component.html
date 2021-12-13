@@ -1,2 +1,53 @@
-<p>order works</p>
+
+<div class = "oder-wrapper">
+<mat-card class = "box">
+<form>
+    <mat-card-content>
+    <mat-card-header>
+        <mat-card-title>Make an Order</mat-card-title>
+      </mat-card-header>
+
+      <div>
+        Username::::::::::
+        <mat-form-field>
+            <input type = "text" placeholder="Username" matInput ngModel name ="Username" id = "Username"class="form-control"  required="true" >
+        </mat-form-field>
+       </div>
+
+   <div>
+    Product Name:
+    <mat-form-field>
+        <input type = "text" placeholder="Product Name" matInput >
+    </mat-form-field>
+
+    <div>
+    Quantity::::::::::::
+    <mat-form-field>
+        <input type = "text" placeholder="Product quantity" matInput >
+    </mat-form-field>
+    </div>
+
+    <div>
+    Amount:::::::::::::
+    <mat-form-field>
+        <input type = "text" placeholder="Amount" matInput >
+    </mat-form-field>
+    </div>
+
+   
+    Buy/Sell:::::::::::
+    <mat-form-field>
+        <input type = "text" placeholder="sell/buy" matInput >
+    </mat-form-field>
+   </div>
+
+</mat-card-content>
+<div>
+    <button mat-raised-button color = "primary">Order</button>
+</div>
+</form>
+</mat-card>
+</div>
+
+
 

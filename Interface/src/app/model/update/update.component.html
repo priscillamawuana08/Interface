@@ -1,0 +1,50 @@
+
+<div class = "oder-wrapper">
+    <mat-card class = "box">
+    <form action="@{/login/client}" method="get">
+        <mat-card-content>
+        <mat-card-header>
+            <mat-card-title>Update an Order</mat-card-title>
+          </mat-card-header>
+    
+          <div>
+            Order ID::::::::::
+            <mat-form-field>
+                <input type = "number" placeholder="id" matInput ngModel name ="id" id = "id"class="form-control"  required="true" >
+            </mat-form-field>
+           </div>
+    
+       <div>
+        Product Name:
+        <mat-form-field>
+            <input type = "text" placeholder="Product Name" matInput >
+        </mat-form-field>
+    
+        <div>
+        Quantity::::::::::::
+        <mat-form-field>
+            <input type = "text" placeholder="Product quantity" matInput >
+        </mat-form-field>
+        </div>
+    
+        <div>
+        Amount:::::::::::::
+        <mat-form-field>
+            <input type = "text" placeholder="Amount" matInput >
+        </mat-form-field>
+        </div>
+    
+       
+        Buy/Sell:::::::::::
+        <mat-form-field>
+            <input type = "text" placeholder="sell/buy" matInput >
+        </mat-form-field>
+       </div>
+    
+    </mat-card-content>
+    <div>
+        <button mat-raised-button color = "primary">Update</button>
+    </div>
+    </form>
+    </mat-card>
+    </div>
