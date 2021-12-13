@@ -29,6 +29,16 @@ const routes: Routes = [
       {
         path: 'portfolio',
         loadChildren: () => import('./model/portfolio/portfolio.module').then(m => m.PortfolioModule)
+      },
+
+      {
+        path: 'delete',
+        loadChildren: () => import('./model/delete/delete.module').then(m => m.DeleteModule)
+      },
+
+      {
+        path: 'updateportfolio',
+        loadChildren: () => import('./model/update-portfolio/update-portfolio.module').then(m => m.UpdatePortfolioModule)
       }
       
 ];

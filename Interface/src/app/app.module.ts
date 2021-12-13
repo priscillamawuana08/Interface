@@ -28,6 +28,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { LoginService } from './service/login.service';
 import { RegisterService } from './service/register.service';
 import { ApiServiceService } from './service/api-service.service';
+// import { DeleteComponent } from './model/delete/delete.component';
+// import { UpdatePortfolioComponent } from './model/update-portfolio/update-portfolio.component';
 // import { ProductsComponent } from './model/products/products.component';
 // import { CustomersComponent } from './model/customers/customers.component';
 
@@ -42,6 +44,8 @@ import { ApiServiceService } from './service/api-service.service';
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
+    // DeleteComponent,
+    // UpdatePortfolioComponent,
     // ProductsComponent,
     // CustomersComponent,
   
