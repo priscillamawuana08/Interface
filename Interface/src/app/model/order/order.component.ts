@@ -36,6 +36,7 @@ export class OrderComponent implements OnInit {
     .set("trade",this.trade);
      this.orderService.checkDetails(params).subscribe(
        success=>{
+         alert("Order successful")
          console.log(success)
        },
        error =>{

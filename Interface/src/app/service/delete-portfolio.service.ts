@@ -12,6 +12,6 @@ export class DeletePortfolioService {
   ) { }
 
   checkDetails(params:any){
-    return this.http.post('',params)
+    return this.http.post('https://group16-banking-app.herokuapp.com/login/client/delete-portfolio/{id}',params)
   }
 }

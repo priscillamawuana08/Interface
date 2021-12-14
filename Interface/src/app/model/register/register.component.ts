@@ -17,6 +17,7 @@ export class RegisterComponent implements OnInit {
   email: string = "";
   password: string = "";
   confirm_password = "";
+  accountBal="";
   isError = false;
   isSuccess = false;
   alert_message: String = "";
@@ -49,7 +50,8 @@ export class RegisterComponent implements OnInit {
       "firstName": this.first_name,
       "lastName": this.last_name,
       "email": this.email,
-      "password": this.password
+      "password": this.password,
+      "accountBal": this.accountBal
     }
     this.registration.registerClient(payload).subscribe({
       complete: () => { console.log()},

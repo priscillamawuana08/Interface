@@ -19,7 +19,7 @@ export class DeleteComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  checkCredentials(){
+  delete(){
     const params = new HttpParams()
     .set('productid', this.productid)
     this.DeleteService.checkDetails(params).subscribe(
