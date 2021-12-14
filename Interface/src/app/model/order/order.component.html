@@ -35,7 +35,7 @@
     </div>
 
    
-    Buy/Sell:::::::::::
+    Trade:::::::::::::
     <mat-form-field>
         <input type = "text" placeholder="sell/buy" matInput >
     </mat-form-field>
@@ -43,7 +43,7 @@
 
 </mat-card-content>
 <div>
-    <button mat-raised-button color = "primary">Order</button>
+    <button type ="submit" (click)= "checkCredentials()" routerLinkActive = "router-link-active"mat-raised-button color = "primary">Order</button>
 </div>
 </form>
 </mat-card>

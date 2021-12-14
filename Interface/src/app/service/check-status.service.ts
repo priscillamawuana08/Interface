@@ -1,10 +1,11 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import {param } from 'jquery';
+
 @Injectable({
   providedIn: 'root'
 })
-export class DeleteService {
+export class CheckStatusService {
 
   constructor(
     private http:HttpClient

@@ -1,4 +1,3 @@
-<p>delete-portfolio works!</p>
 <div class = "oder-wrapper">
     <mat-card class = "box">
     <form action="https://group16-banking-app.herokuapp.com/login/client/delete-portfolio/{id}">
@@ -14,7 +13,7 @@
         </mat-form-field>
 
     <div>
-        <button mat-raised-button color = "primary">Delete</button>
+        <button type ="submit" (click)= "checkCredentials()" routerLinkActive = "router-link-active"mat-raised-button color = "primary">Delete</button>
     </div>
     </mat-card-content>
     </form>
